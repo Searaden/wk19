@@ -39,7 +39,7 @@ module.exports = () => {
       }),
 
       new InjectManifest({
-        swSrc: './src/srs-sw.js',
+        swSrc: './src/src-sw.js',
         swDest: 'service-worker.js',
       }),
       
@@ -49,7 +49,7 @@ module.exports = () => {
       rules: [
         {
           test: /\.css$/,
-          use: ['style-loader', 'css.loader'],
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.js$/,
